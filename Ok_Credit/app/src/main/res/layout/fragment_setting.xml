@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivityFragment.DrawerFragment.SettingFragment">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:paddingStart="15dp"
+            android:drawablePadding="18dp"
+            android:paddingBottom="10dp"
+            android:drawableStart="@drawable/person_profile"
+            android:textColor="@color/black"
+
+            />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/gray_sk"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Number"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+        android:textColor="@color/black"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/gray_sk"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App language"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_language_24"
+        android:textColor="@color/black"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/gray_sk"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Security PIN"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:textColor="@color/black"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/gray_sk"/>
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App Lock"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_phonelink_lock_24"
+        android:textColor="@color/black"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/gray_sk"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Password"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_payment_24"
+        android:textColor="@color/black"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/gray_sk"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fingerprint Password"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_fingerprint_24"
+        android:textColor="@color/black"
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@color/gray_sk"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out from all devices"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_logout_24"
+        android:textColor="@color/black"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/gray_sk"/>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:id="@+id/signOut"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"
+        android:drawablePadding="18dp"
+        android:paddingBottom="10dp"
+        android:drawableStart="@drawable/ic_baseline_power_settings_new_24"
+        android:textColor="#A0090C"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="55dp"
+        android:background="@color/gray_sk"/>
+
+
+
+
+
+</LinearLayout>

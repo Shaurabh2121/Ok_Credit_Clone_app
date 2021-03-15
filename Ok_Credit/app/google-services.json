@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "130277898826",
+    "project_id": "okcredit-5db06",
+    "storage_bucket": "okcredit-5db06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130277898826:android:c4d33118dccc66760a04b3",
+        "android_client_info": {
+          "package_name": "com.example.ok_credit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130277898826-ii71g8ifnpj62v2mmue1a8nq6ortcqpv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ok_credit",
+            "certificate_hash": "3fc607bff0c247e0f570a2474e17b6ff83ed5a32"
+          }
+        },
+        {
+          "client_id": "130277898826-a518absgr738es4qek347fuuv1lt1jqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAROc6q8Lhk3xcrTcrPpL3tVPc86FbCF-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130277898826-a518absgr738es4qek347fuuv1lt1jqj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

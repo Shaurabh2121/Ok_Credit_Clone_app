@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".loginActivityFragment.GenerateOTPFragment">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Please be patient"
+    android:textColor="@color/black"
+    android:textSize="26dp"
+    android:textStyle="bold"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNum"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text=""/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Mobile"
+        android:padding="7dp"
+        android:id="@+id/tvEditMobileOpt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="3dp"
+        android:paddingStart="5dp"
+        android:textColor="#73B14D"
+           android:drawableStart="@drawable/ic_baseline_edit_24"
+        android:background="@drawable/edit_mobile_otp_rectangle"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:src="@drawable/opt_image"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/id_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:itemCount="6"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:itemBackground="#4CAF50"
+            android:cursorVisible="true"
+            app:lineColor="#4CAF50"
+            android:textColor="#1F1F1F"
+            android:inputType="number"
+            app:hideLineWhenFilled="true"
+            style="@style/PinWidget.PinView"
+            app:itemRadius="5dp"/>
+        <TextView
+            android:id="@+id/verifyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangle_green_next"
+            />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ok_Credit</string>
+    <string name="safe_trusted">Safe &amp; Trusted</string>
+    <string name="safe_secure">100% Safe &amp; Secure</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="use_on_multiple">Use on multiple device, Setup app lock &amp; Download backup without worrying about losing data</string>
+    <string name="forget_door_to_door">Forget the stress of door to door collection . Use payment reminders to collect dues &amp; save time! </string>
+    <string name="great_customer">Send updates of transactions to customers and maintain a transparent &amp; happy bond.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

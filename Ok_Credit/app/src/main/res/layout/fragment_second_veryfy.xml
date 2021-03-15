@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".loginActivityFragment.VerifyFragment.SecondVeryfyFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Timely Collection"
+        android:textColor="@color/black"
+        android:textSize="24dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:textAlignment="viewStart"
+        android:text="@string/forget_door_to_door"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/timely_collection"/>
+
+</LinearLayout>

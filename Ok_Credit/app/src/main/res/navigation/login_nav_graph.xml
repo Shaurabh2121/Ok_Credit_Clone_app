@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav_graph"
+    app:startDestination="@id/lagnuageFragment">
+
+    <fragment
+        android:id="@+id/lagnuageFragment"
+        android:name="com.example.ok_credit.loginActivityFragment.LagnuageFragment"
+        android:label="fragment_lagnuage"
+        tools:layout="@layout/fragment_lagnuage" >
+        <action
+            android:id="@+id/action_lagnuageFragment_to_verifyMobileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/verifyMobileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyMobileFragment"
+        android:name="com.example.ok_credit.loginActivityFragment.VerifyMobileFragment"
+        android:label="fragment_verify_mobile"
+        tools:layout="@layout/fragment_verify_mobile" >
+        <action
+            android:id="@+id/action_verifyMobileFragment_to_OTPMentionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/OTPMentionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPMentionFragment"
+        android:name="com.example.ok_credit.loginActivityFragment.OTPMentionFragment"
+        android:label="fragment_o_t_p_mention"
+        tools:layout="@layout/fragment_o_t_p_mention" >
+        <action
+            android:id="@+id/action_OTPMentionFragment_to_generateOTPFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/generateOTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generateOTPFragment"
+        android:name="com.example.ok_credit.loginActivityFragment.GenerateOTPFragment"
+        android:label="fragment_generate_o_t_p"
+        tools:layout="@layout/fragment_generate_o_t_p" >
+        <argument
+            android:name="storedVerificationId"
+            app:argType="string" />
+<!--        <action-->
+<!--            android:id="@+id/action_generateOTPFragment_to_homeActivity"-->
+<!--            app:enterAnim="@anim/slide_in_right"-->
+<!--            app:exitAnim="@anim/slide_out_left"-->
+<!--            app:popEnterAnim="@anim/slide_in_left"-->
+<!--            app:popExitAnim="@anim/slide_out_right"-->
+<!--            app:destination="@id/homeActivity" />-->
+        <argument
+            android:name="number"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_generateOTPFragment_to_bussinessNameFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/bussinessNameFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.ok_credit.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/bussinessNameFragment"
+        android:name="com.example.ok_credit.loginActivityFragment.BussinessNameFragment"
+        android:label="fragment_bussiness_name"
+        tools:layout="@layout/fragment_bussiness_name" >
+        <action
+            android:id="@+id/action_bussinessNameFragment_to_homeActivity"
+            app:destination="@id/homeActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="number"
+            app:argType="string" />
+
+    </fragment>
+</navigation>

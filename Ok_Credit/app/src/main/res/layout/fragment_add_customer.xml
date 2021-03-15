@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivityFragment.HomeFragmentTab.AddCustomerFragment">
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="16dp"
+    android:layout_marginTop="10dp"
+    android:paddingStart="30dp"
+    android:textColor="@color/black"
+    android:text="1 crore+ customers have been added by businesses in last month ok credit "/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#DCD2D2"
+        android:layout_marginTop="15dp"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/phone_book"
+        android:layout_height="100dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="8dp"
+        android:hint="Enter Name"
+        android:id="@+id/etNameCustomer"
+        android:textColor="#4CAF50"
+        android:paddingStart="10dp"
+        android:textColorHint="#4CAF50"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_baseline_account_circle_24"
+        android:background="@drawable/edit_mobile_otp_rectangle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="8dp"
+        android:hint="Enter Phone Number"
+        android:textColor="#4CAF50"
+        android:id="@+id/etNumberCustomer"
+        android:paddingStart="10dp"
+        android:textColorHint="#4CAF50"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+        android:background="@drawable/edit_mobile_otp_rectangle"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addplusCustomer"
+            android:layout_width="match_parent"
+            android:backgroundTint="#19731D"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_baseline_add_circle_24"
+            android:layout_marginEnd="25dp"
+            android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
