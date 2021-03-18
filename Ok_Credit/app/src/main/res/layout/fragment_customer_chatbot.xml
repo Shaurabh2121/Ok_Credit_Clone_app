@@ -1,17 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
     android:layout_height="match_parent"
     tools:context=".HomeActivityFragment.HomeFragmentTab.CustomerChatbotFragment">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/customerChatbot"
-    android:text="Shaurabh"
-    android:textColor="#FF0000"
-    android:textSize="24dp"/>
+    <LinearLayout
+        android:id="@+id/ll_layout_credit"
+        android:layout_width="match_parent"
+        android:layout_above="@id/ll_layout_bar"
+        android:layout_height="wrap_content"
+        android:background="#E4E4E4"
+        android:orientation="horizontal">
 
+        <EditText
+            android:id="@+id/et_send"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".7"
+            android:textColorHint="#FF7043"
+            android:drawablePadding="10dp"
+            android:textColor="#FF7043"
+            android:drawableStart="@drawable/ic_baseline_arrow_downward_24"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/white"
+            android:hint="Type  Amount..."
+            android:padding="10dp"
+            android:singleLine="true" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#FF7043"
+            android:text="Send"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E4E4"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_received"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".7"
+            android:textColorHint="#4CAF50"
+            android:textColor="#4CAF50"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_baseline_arrow_upward_24"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/white"
+            android:hint="Type  Amount..."
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#4CAF50"
+            android:text="Received"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_messages1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="20"
+        tools:listitem="@layout/message_item_supplier"
+        android:layout_above="@id/ll_layout_credit"
+        android:layout_below="@+id/dark_divide1r"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"
+        android:id="@+id/dark_divide1r"/>
+
+</RelativeLayout>

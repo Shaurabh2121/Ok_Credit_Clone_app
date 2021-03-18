@@ -10,7 +10,7 @@ interface ProfileDao {
     suspend  fun insert(profileEntity: ProfileEntity)
 
     @Query("SELECT * FROM profileentity order by id DESC")
-    fun getData(): LiveData<List<ProfileEntity>>
+    fun getData(): LiveData<MutableList<ProfileEntity>>
 
     @Update
     suspend fun updateData(profileEntity: ProfileEntity)

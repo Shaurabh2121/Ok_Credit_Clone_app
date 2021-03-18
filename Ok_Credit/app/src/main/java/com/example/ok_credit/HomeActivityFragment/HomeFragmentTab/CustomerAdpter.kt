@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ok_credit.R
 import com.example.ok_credit.database.MyAddCustomer.CustomerItemClickListener
 import com.example.ok_credit.database.MyAddCustomer.MyCustomerEntity
-import com.example.ok_credit.database.MyAddSupplier.MyAddSupplierEntity
 
 class CustomerAdpter(val myCustomerEntityList: List<MyCustomerEntity>,val listener: CustomerItemClickListener): RecyclerView.Adapter<CustomerAdpter.CustomerViewHolder>() {
 

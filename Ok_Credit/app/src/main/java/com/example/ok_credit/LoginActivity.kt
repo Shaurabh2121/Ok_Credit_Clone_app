@@ -14,10 +14,10 @@ class LoginActivity : AppCompatActivity() {
 
 //        Check the current user whether he logged in already to auto-login
 
-        var currentUser = auth.currentUser
+        val currentUser = auth.currentUser
         if(currentUser != null) {
             startActivity(Intent(applicationContext, HomeActivity::class.java))
             finish()
         }
     }
-}
+}  

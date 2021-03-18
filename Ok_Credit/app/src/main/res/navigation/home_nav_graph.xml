@@ -73,7 +73,7 @@
     <fragment
         android:id="@+id/supllierChatbotFragment"
         android:name="com.example.ok_credit.HomeActivityFragment.HomeFragmentTab.SupllierChatbotFragment"
-        android:label="fragment_supllier_chatbot"
+        android:label="{name}"
         tools:layout="@layout/fragment_supllier_chatbot" >
         <argument
             android:name="name"
@@ -86,7 +86,7 @@
     <fragment
         android:id="@+id/customerChatbotFragment"
         android:name="com.example.ok_credit.HomeActivityFragment.HomeFragmentTab.CustomerChatbotFragment"
-        android:label="fragment_customer_chatbot"
+        android:label="{name}"
         tools:layout="@layout/fragment_customer_chatbot" >
         <argument
             android:name="name"

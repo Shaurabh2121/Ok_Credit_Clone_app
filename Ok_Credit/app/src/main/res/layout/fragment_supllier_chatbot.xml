@@ -14,14 +14,14 @@
 
         <EditText
             android:id="@+id/et_credit_Amt"
-            android:inputType="textShortMessage"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
-            android:textColorHint="#EC2946"
+            android:layout_margin="5dp"
+            android:layout_weight=".7"
+            android:textColorHint="#FF7043"
             android:drawablePadding="10dp"
-            android:textColor="#4CAF50"
+            android:textColor="#FF7043"
             android:drawableStart="@drawable/ic_baseline_arrow_downward_24"
             android:background="@drawable/round_button"
             android:backgroundTint="@android:color/white"
@@ -33,10 +33,10 @@
             android:id="@+id/btn_credit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/round_button"
-            android:backgroundTint="#EC2946"
+            android:backgroundTint="#FF7043"
             android:text="Credit"
             android:textColor="@android:color/white" />
 
@@ -52,11 +52,11 @@
 
         <EditText
             android:id="@+id/et_pay_Amt"
-            android:inputType="textShortMessage"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight=".5"
+            android:layout_margin="5dp"
+            android:layout_weight=".7"
             android:textColorHint="#4CAF50"
             android:textColor="#4CAF50"
             android:drawablePadding="10dp"
@@ -71,7 +71,7 @@
             android:id="@+id/btn_payment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/round_button"
             android:backgroundTint="#4CAF50"
@@ -83,7 +83,9 @@
         android:id="@+id/rv_messages"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/ll_layout_bar"
+        tools:itemCount="20"
+        tools:listitem="@layout/message_item_supplier"
+        android:layout_above="@id/ll_layout_credit"
         android:layout_below="@+id/dark_divider"
         />
     <View

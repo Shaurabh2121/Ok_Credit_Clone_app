@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.SearchView
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -20,6 +21,7 @@ class HomeActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+    val headerView: View = nav_drawer.getHeaderView(0)
 //        auth= FirebaseAuth.getInstance()
       setSupportActionBar(toolbar)
         val naHostFragment=supportFragmentManager.findFragmentById(R.id.fragment2)as NavHostFragment
@@ -28,7 +30,12 @@ class HomeActivity : AppCompatActivity(){
     NavigationUI.setupActionBarWithNavController(this,navController,appBarConfiguration)
         nav_drawer.setupWithNavController(navController)
 
+    headerView.setOnClickListener {
 
+           val intent=Intent(this,DrawerHeaderActivity::class.java)
+
+            startActivity(intent)
+    }
 
 //        var currentUser=auth.currentUser
 //        if(currentUser==null){

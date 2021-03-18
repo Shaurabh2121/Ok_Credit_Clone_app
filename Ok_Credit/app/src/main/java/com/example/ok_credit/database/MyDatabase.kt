@@ -10,12 +10,15 @@ import com.example.ok_credit.database.MyAddSupplier.MyAddSupplierDao
 import com.example.ok_credit.database.MyAddSupplier.MyAddSupplierEntity
 import com.example.ok_credit.database.ProfileDatabase.ProfileDao
 import com.example.ok_credit.database.ProfileDatabase.ProfileEntity
+import com.example.ok_credit.database.SupplierChatBot.SupplierChatDao
+import com.example.ok_credit.database.SupplierChatBot.SuppllierChatEnity
 
-@Database(entities = [MyCustomerEntity::class,MyAddSupplierEntity::class,ProfileEntity::class],version = 2,exportSchema = false)
+@Database(entities = [MyCustomerEntity::class,MyAddSupplierEntity::class,ProfileEntity::class,SuppllierChatEnity::class],version = 3,exportSchema = false)
  abstract class MyDatabase():RoomDatabase() {
     abstract fun getMyCustomerDao(): MyCustomerDao
     abstract fun getMyAddSupplierDao(): MyAddSupplierDao
     abstract fun getProfileDataDao():ProfileDao
+    abstract fun getSupplierChatDao():SupplierChatDao
     companion object {
         // Singleton prevents multiple instances of database opening at the
         // same time.

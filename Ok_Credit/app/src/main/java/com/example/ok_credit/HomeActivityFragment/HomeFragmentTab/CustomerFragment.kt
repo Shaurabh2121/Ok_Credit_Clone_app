@@ -15,6 +15,8 @@ import com.example.ok_credit.database.MyDatabase
 import kotlinx.android.synthetic.main.fragment_customer.*
 import kotlinx.android.synthetic.main.fragment_supplier.*
 import kotlinx.coroutines.launch
+import java.security.Timestamp
+import java.sql.Time
 
 
 class CustomerFragment : BaseFragment(),CustomerItemClickListener {
@@ -33,6 +35,7 @@ class CustomerFragment : BaseFragment(),CustomerItemClickListener {
         customRecyclerView.layoutManager= LinearLayoutManager(context)
 
         launch {
+
            context?.let {sk ->
                val data=MyDatabase.getDatabase(sk).getMyCustomerDao().getData()
                data.observe(viewLifecycleOwner, Observer {

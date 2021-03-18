@@ -32,18 +32,13 @@
         android:layout_height="0dp"
         app:defaultNavHost="true"
         app:navGraph="@navigation/home_nav_graph" />
-<!--    <Button-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:id="@+id/btnLogOut"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="LogOut"/>-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:id="@+id/nav_drawer"
         android:clickable="true"
+        android:focusableInTouchMode="true"
         app:headerLayout="@layout/header_drawer"
         android:layout_height="match_parent"
         android:layout_gravity="start"
